@@ -1,7 +1,20 @@
 {
-  "name": "nodejs-typescript-boilerplate",
-  "version": "0.0.0",
-  "description": "nodejs-typescript-boilerplate",
+  "name": "lizard-ts",
+  "version": "1.0.0",
+  "description": "PQC Lizard implementation with typescript",
+  "main": "./dist/src/main.js",
+  "types": "./dist/src/main.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sweatpotato13/lizard-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sweatpotato13/lizard-ts/issues"
+  },
+  "homepage": "https://github.com/sweatpotato13/lizard-ts",
+  "files": [
+    "dist"
+  ],
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -32,7 +45,7 @@
     "ts-node-dev": "^1.1.6"
   },
   "scripts": {
-    "dev": "yarn prettier && ts-node-dev src/main.ts --trace-sync-io",
+    "dev": "ts-node-dev src/main.ts --trace-sync-io",
     "test": "jest",
     "lint": "eslint \"{src,test}/**/*.ts\" --fix",
     "prettier": "prettier --write --config .prettierrc ./src///*.ts && prettier --write --config .prettierrc ./test///*.ts",
