@@ -1,6 +1,6 @@
 {
   "name": "lizard-ts",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "PQC Lizard implementation with typescript",
   "main": "./dist/src/main.js",
   "types": "./dist/src/main.d.ts",
