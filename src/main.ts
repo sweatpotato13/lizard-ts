@@ -70,7 +70,7 @@ function vectorSubstract(a, b) {
 }
 
 //Multiplies a vector by a scalar, c = s*v
-function scalarMultiplyVector(s, v) {
+export function scalarMultiplyVector(s, v) {
     const c = new Array(v.length);
     for (let i = 0; i < v.length; i++) {
         c[i] = s * v[i];
@@ -304,9 +304,7 @@ export function randomPlaintext() {
     for (let i = 0; i < l; i++) {
         plaintext[i] = nextInt(2);
     }
-    const vvector = plaintext;
-    const m_transpose = scalarMultiplyVector(128, vvector);
-    return m_transpose;
+    return plaintext;
 }
 //***********************************************************
 export function keyGeneration(): KeyValue {
